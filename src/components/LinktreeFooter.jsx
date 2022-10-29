@@ -1,22 +1,25 @@
-import React from 'react'
-import { FooterSection } from './LinktreeFooterStyled'
+import React from 'react';
+import { FooterSection } from './LinktreeFooterStyled';
+import hng from "../assets/images/Vector.svg"
+import i4g from "../assets/images/I4G.png"
+import logo from "../assets/images/logo.36d2d48a.svg"
+
 function Footer() {
   return (
     <FooterSection>
-        <div>
-          <h5>Zuri</h5>
-          <span></span>
-          <h5>Internship</h5>
-        </div>
+    <div className='footer'>
+      <div className='zuri-logo'>
+        <img src={logo} alt="" />
+      </div>
 
-        <h5>HNG Internship 9 Frontend Task</h5>
-        <div>
-            <img src="" alt="" className='icon-globe' />
-            <div className="text-name">
-                <h5>INGRESSIVE</h5>
-                <h5>FOR GOOD</h5>
-            </div>
-        </div>
+      <h5 className='footer-text'>HNG Internship 9 Frontend Task</h5>
+
+      <div className='icon-globe'>
+       <img src={i4g} alt="" />
+      </div>
+        
+    </div>
+        
     </FooterSection>
   )
 }
