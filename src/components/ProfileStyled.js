@@ -51,7 +51,14 @@ width: 100%;
 .user{    
 width: 88px;
 align-self: center;
-border-radius: 50%;    
+border-radius: 50%;  
+
+&:hover .user::after{
+    content: "";
+    position: absolute;
+
+    transform: scale(1);
+}
 }
 
 `

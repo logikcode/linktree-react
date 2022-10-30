@@ -12,8 +12,6 @@ export default function ProfileSection (){
           <h2 id='twitter'>Olah Emmanuel</h2>
           <h2 id='slack'  hidden>logikcode</h2>
         </div>
-
-         
             
             <ShareButton className='share-icon'>
             <span className='share-tooltip'>Share Link</span>
