@@ -1,14 +1,15 @@
 import React from 'react'
-import { Link, Button, Iyalaya } from './CardStyled';
+import { Link, Button, LinkContainer, ToolTip} from './CardStyled';
 
 function LinkCard(props) {
   return (
-    <Iyalaya>
+    <LinkContainer>
     <Link>
         <Button id ={props.id} href={props.href}>{props.text}</Button>
-    
+        
     </Link>
-    </Iyalaya>
+    <ToolTip className='tooltip'>{props.subtext}</ToolTip>
+    </LinkContainer>
   )
 }
 
