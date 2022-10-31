@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/linktree-react/static/css/main.9f088a99.css",
-    "main.js": "/linktree-react/static/js/main.883c02fe.js",
+    "main.css": "/linktree-react/static/css/main.9f4f9ca0.css",
+    "main.js": "/linktree-react/static/js/main.87dc4b61.js",
     "static/media/Emmanuel-Olad.jpg": "/linktree-react/static/media/Emmanuel-Olad.e53d03c5be5eb1a2cc82.jpg",
     "static/media/logo.36d2d48a.svg": "/linktree-react/static/media/logo.36d2d48a.22d4298a15b0797cf13152b0b88226c6.svg",
     "static/media/Vector.svg": "/linktree-react/static/media/Vector.fe365f435ac709b515e1114cc859cdb6.svg",
@@ -10,11 +10,11 @@
     "static/media/dots-horizontal.svg": "/linktree-react/static/media/dots-horizontal.2af13fa62624ad9f6952c87bb0fd1888.svg",
     "static/media/Icon.svg": "/linktree-react/static/media/Icon.e3f81b496e21f13d54272e5772ace63b.svg",
     "index.html": "/linktree-react/index.html",
-    "main.9f088a99.css.map": "/linktree-react/static/css/main.9f088a99.css.map",
-    "main.883c02fe.js.map": "/linktree-react/static/js/main.883c02fe.js.map"
+    "main.9f4f9ca0.css.map": "/linktree-react/static/css/main.9f4f9ca0.css.map",
+    "main.87dc4b61.js.map": "/linktree-react/static/js/main.87dc4b61.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f088a99.css",
-    "static/js/main.883c02fe.js"
+    "static/css/main.9f4f9ca0.css",
+    "static/js/main.87dc4b61.js"
   ]
 }
