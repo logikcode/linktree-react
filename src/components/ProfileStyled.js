@@ -7,6 +7,7 @@ justify-content: center;
 width: 100%;
 
 
+
 .share-icon-mobile{
     padding: 0.5rem 1rem;
     width: 50px;
@@ -32,42 +33,110 @@ width: 100%;
     }
 }
 
-.user-info{
+`
+export const ImageContainer = styled.div`
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding:5px;
+    position: relative;
+    //cursor: pointer;
+    
+   
+
+
+
+    .icon {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+  
+    }
 
     @media screen and (max-width: 768px){
         
     }
     
-}
+
+`
 
 
+export const ImageWrapper = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:5px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;    
+
+    .overlay{
+       
+        position: absolute;
+        top: 7px;
+        bottom: 0;
+        left: 43px;
+        right: 0;
+        height: 85%;
+        width: 50%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 100%;
+       // background-color: transparent;
 
 
-.user{    
-width: 88px;
-align-self: center;
-border-radius: 50%;  
+    }
 
-&:hover .user::after{
+    .image{    
+        width: 88px;
+        align-self: center;
+        border-radius: 50%;  
+        cursor: pointer;
+       
+    }
+
+    /* .image::before{
+    background-color: rgba(38,38,38,.8);
+    background-image: url("../assets/images/camera-01.png");
+    background-position: 50% 82%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
     content: "";
+    cursor: pointer;
+    height: 98%;
     position: absolute;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: .5s ease-in-out;
+    width: 100%;
 
+    }
+
+    .image:hover:before {
+    -webkit-transform: scale(1);
     transform: scale(1);
-}
-}
+    transition: .5s ease-in-out;
+} */
+
+    // new style properties
+     &:hover .overlay{
+        transform: scale(1.05);
+        opacity: 1;
+
+    } 
 
 `
-export const ShareButtonContainer = styled.div`
-border: 1px solid red;
-/* display: flex;
-flex-direction: row; */
-`
+
+
 export const ShareButton = styled.button`
+    
     width: 40px;
     height: 40px;
     border-radius: 100%;
