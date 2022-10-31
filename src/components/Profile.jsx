@@ -12,7 +12,7 @@ export default function ProfileSection (){
              <img src={me} alt="" id='profile__img' className='image'/>
              <div className="overlay">
                 <a className='icon'>
-                  <i class="fa fa-camera " aria-hidden="true"></i>
+                  <i class="fa fa-camera icon-camera" aria-hidden="true"></i>
                 </a>  
               </div>
           </ImageWrapper>
