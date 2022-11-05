@@ -1,6 +1,20 @@
 import styled from "styled-components";
 
-export const LinkContainer = styled.div`
+// export const LinkWrapper = styled.div`
+
+// /* width: 100%;
+// margin: 25px 0px;
+// position: relative; */
+
+// /* &:hover{
+//     .tooltip{
+//         visibility: visible;
+        
+//     }
+// } */
+
+// `
+export const LinkWrapper = styled.div`
 
 width: 100%;
 margin: 25px 0px;
@@ -13,9 +27,6 @@ position: relative;
     }
 }
 
-`
-export const Link = styled.div`
-box-sizing: border-box;
 display: flex;
 justify-content: center;
 align-items: center;
