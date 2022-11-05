@@ -34,12 +34,12 @@ function ContactUs() {
 
                     <div className="form-email">
                         <label htmlFor="email" className='form-label'>Email</label>
-                        <input type="text" className='email' placeholder='yourname@email.com'/>
+                        <input type="text" id = "email" className='email' placeholder='yourname@email.com'/>
                     </div>
                     
                     <div className="message-box">
                         <label htmlFor="">Message</label>
-                        <textarea name="" id="" cols="30" rows="10" className='form-message' placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+                        <textarea name="" id="message" cols="30" rows="10" className='form-message' placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
                     </div>
 
                     <div className="permission">
@@ -48,7 +48,7 @@ function ContactUs() {
                     </div>
 
                 </div>
-                <button className='submit-btn'>Send message</button>
+                <button className='submit-btn' id='btn__submit'>Send message</button>
             </ContactForm>
            </Content>
         </SectionBody>
