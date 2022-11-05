@@ -1,6 +1,5 @@
 import React from 'react';
 import { FooterSection } from './LinktreeFooterStyled';
-import hng from "../assets/images/Vector.svg"
 import i4g from "../assets/images/I4G.png"
 import logo from "../assets/images/logo.36d2d48a.svg"
 
