@@ -1,28 +1,19 @@
 import styled from "styled-components";
 
 export const MainSection = styled.div`
-border: 1px solid red;
 
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-overflow: hidden;
 
 padding: 64px 0px 96px;
 gap: 64px;
+width: 98.5vw; 
 
-/* position: absolute; */
-/* width: 99vw; */
-/* height: 100vh; */
-left: 0px;
-top: 0px;
-
-/* Base/White */
-
-//background: #FFFFFF;
-/* background: green; */
-
+@media screen  and (max-width: 768px){
+    width: auto;
+}
 
 `
 
@@ -32,57 +23,53 @@ border: 1px solid red;
 `
 
 export const SectionBody = styled.div`
-border: 1px solid red;
-background: white;
 
-display: flex;
-flex-direction: row;
-justify-content: center;
+background: white;
 align-items: center;
 padding: 0px 32px;
 gap: 64px;
 
-width: 1280px;
+ width: 75%; 
 /* height: 800px; */
 
-
+@media screen  and (max-width: 768px){
+    flex-direction: column;
+   width: auto;
+}
 
 
 `
 
 export const Content = styled.div`
-border: 1px solid red;
+
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 0px;
 
-width: 1200px;
+width: 100%; 
 height: 800px; 
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 1;
+@media screen  and (max-width: 768px){
+   width: auto;
+}
 
 
 `
 
 export const ContactForm = styled.section`
-border:  1px solid red;
+
 display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 gap: 48px;
 
-width: 720px;
+width: 74%;
 
-
+@media screen  and (max-width: 768px){
+    width: auto;
+}
 .heading{
 display: flex;
 flex-direction: column;
@@ -90,34 +77,33 @@ align-items: flex-start;
 padding: 0px;
 gap: 20px;
 
-width: 100%;
+//width: 100%;
 height: 94px;
-
+@media screen  and (max-width: 768px){
+    /* width: 50%; */
+    //align-items: center;
+}
 
 }
 
 .heading-text{
-    border: 1px solid red;
-width: 448px;
+
 height: 44px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
 line-height: 44px;
-/* identical to box height, or 122% */
-
-letter-spacing: -0.02em;
-
-/* Gray/900 */
 
 color: #101828;
+@media screen  and (max-width: 768px){
+    width: auto;
+    
+}
 
 }
 
 .heading-paragraph{
-    border: 1px solid red;
-width: 720px;
 height: 30px;
 font-family: 'Inter';
 font-style: normal;
@@ -125,71 +111,59 @@ font-weight: 400;
 font-size: 20px;
 line-height: 30px;
 color: #475467;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+@media screen  and (max-width: 768px){
+    width: auto;
+    font-size: 17.5px;
+}
 
 }
 
 .form{
-    border: 1px solid red;
-    display: flex;
+display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 gap: 32px;
+width: 100%;
+height: auto;
 
-width: 720px;
-/* height: 474px; */
 
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0; */
 }
 
-.form-name{
+.form-name-container{
 
-    border: 1px solid red;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap: 24px;
-
-width: 720px;
-height: 70px;
+width: 100%;
 
 
+@media screen  and (max-width: 768px){
+     flex-direction: column; 
+}
 
 }
 
-.form-input{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
-    align-items: flex-start;
+.form-input-box{
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
 padding: 0px;
 gap: 6px;
 
-width: 348px;
+/* width: 348px;  */
+width: 100%;
 height: 70px;
+@media screen  and (max-width: 768px){
+    width: 100%;
+}
 }
 
 .form-label{
-    width: 71px;
+ width: 71px;
 height: 20px;
-
-/* Text sm/Medium */
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
@@ -201,22 +175,15 @@ color: #344054;
 }
 
 .fname{
-    display: flex;
-flex-direction: row;
-align-items: center;
 padding: 10px 14px;
 gap: 8px;
-
-width: 348px;
+width: 100%;
 height: 44px;
-
-/* Base/White */
-
+@media screen  and (max-width: 768px){
+    width: 100%;
+}
 background: #FFFFFF;
-/* Gray/300 */
-
 border: 1px solid #D0D5DD;
-/* Shadow/xs */
 
 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 border-radius: 8px;
@@ -225,14 +192,15 @@ border-radius: 8px;
 }
 
 .form-email{
-    border: 1px solid red;
+
     display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
+padding: 1px;
 gap: 6px;
 
-width: 720px;
+/* width: 720px; */
+width: 100%;
 height: 70px;
 }
 
@@ -240,7 +208,7 @@ height: 70px;
 
 width: 36px;
 height: 20px;
-
+width: 100%;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
@@ -250,118 +218,90 @@ line-height: 20px;
 }
 
 .email{
-    border: 1px solid red;
-
-    display: flex;
-flex-direction: row;
-align-items: center;
 padding: 10px 14px;
 gap: 8px;
 
-width: 100%;
+ width: 100%; 
 height: 44px;
-
-/* Base/White */
-
 background: #FFFFFF;
-/* Gray/300 */
-
 border: 1px solid #D0D5DD;
-/* Shadow/xs */
-
 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 border-radius: 8px;
 
+
 }
 
-.text-area{
-    border: 1px solid red;
-
-    display: flex;
+.message-box{
+display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
+padding: 1px;
 gap: 6px;
-
-width: 720px;
+width: 100%;
 height: 158px;
 
 }
 
 .form-message{
-    border: 1px solid red;
+   
     display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 12px 14px;
 gap: 8px;
 
-width: 720px;
-height: 132px;
-
-/* Base/White */
-
+width: 100%;
+/* height: 132px; */
 background: #FFFFFF;
-/* Gray/300 */
-
 border: 1px solid #D0D5DD;
-/* Shadow/xs */
-
 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 border-radius: 8px;
 }
 
 .permission{
-    border: 1px solid red;
     display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap: 12px;
 
-width: 720px;
+width: 100%;
 height: 24px;
 }
 
 .check-permission{
     width: 20px;
 height: 20px;
-
-/* Base/White */
-
 background: #FFFFFF;
-/* Gray/300 */
-
 border: 1px solid #D0D5DD;
 border-radius: 6px;
+margin: 1px;
 }
 
 .permission-text{
-    display: flex;
+    display: inline-block;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
+padding: 1px;
 gap: 2px;
-
-width: 688px;
 height: 24px;
+
+@media screen  and (max-width: 768px){
+    font-size: 12px;
+}
 }
 
 .submit-btn{
-    display: flex;
+    /* display: flex;
 flex-direction: row;
 justify-content: center;
-align-items: center;
+align-items: center; */
 padding: 12px 20px;
 gap: 8px;
-
-width: 720px;
 height: 48px;
-
-/* Primary/600 */
-
 background: #1570EF;
-/* Primary/600 */
+width: 100%;
+margin: 2px;
 
 border: 1px solid #1570EF;
 /* Shadow/xs */

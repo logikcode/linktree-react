@@ -18,23 +18,28 @@ function ContactUs() {
                 </div>
 
                 <div className="form">
-                    <div className="form-name">
-                        <div className="form-input">
+                    <div className="form-name-container">
+                        <div className="form-input-box">
                             <label htmlFor="fname" className='form-label'>First name</label>
                             <input type="text" className='fname' placeholder='Enter your first name' />
                         </div>
-                        <div className="form-input">
+                        <div className="form-input-box">
                             <label htmlFor="fname" className='form-label'>Last name</label>
                             <input type="text" className='fname' placeholder='Enter your last name' />
                         </div>
+                        
+
+                        
                     </div>
+
                     <div className="form-email">
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email" className='form-label'>Email</label>
                         <input type="text" className='email' placeholder='yourname@email.com'/>
                     </div>
-                    <div className="text-area">
-                    <label htmlFor="">Message</label>
-                    <textarea name="" id="" cols="30" rows="10" className='form-message' placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+                    
+                    <div className="message-box">
+                        <label htmlFor="">Message</label>
+                        <textarea name="" id="" cols="30" rows="10" className='form-message' placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
                     </div>
 
                     <div className="permission">

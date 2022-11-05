@@ -27,8 +27,10 @@ function LinkTree() {
           <LinkContainer id = "book__python" text="Python Books" href="https://books.zuri.team/python-for-beginners?ref_id=logikcode" title={pythonBook}/>
           <LinkContainer id = "pitch" text="Background Check for Coders" href="https://background.zuri.team" title={checkingCoder}/>
           <LinkContainer id = "book__design" text="Design Books" href="https://books.zuri.team/design-rules" title={designBooks}/>
-          <NavLink to={"/linktree-react/contact"}>
-          <LinkContainer id = "contact" text={"Contact Me"} title ={contact}/>
+          
+          <NavLink to={"/linktree-react/contact"} style={{textDecoration:"none"} }>
+          
+          <LinkContainer id = "contact" text={"Contact Me"} title ={contact} />
 
           </NavLink>
 
