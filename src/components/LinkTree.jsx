@@ -14,12 +14,15 @@ function LinkTree() {
     const checkingCoder = "Are you a coder? We will verify your claim!";
     const designBooks = "Get the best books on designs here! All freely offered by Zuri."
     const contact = "Contact Me"
+    const styles ={textDecoration:"none", active:"#101828", visited:"#101828", link:"#101828"}
+    
+
   return (
     
       <Main>
         <Section>
           <ProfileSection/>
-  
+
           <div className="links">
         
           <LinkContainer id = "btn__zuri" text="Zuri Team" href="https://training.zuri.team/"/>
@@ -27,10 +30,10 @@ function LinkTree() {
           <LinkContainer id = "book__python" text="Python Books" href="https://books.zuri.team/python-for-beginners?ref_id=logikcode" title={pythonBook}/>
           <LinkContainer id = "pitch" text="Background Check for Coders" href="https://background.zuri.team" title={checkingCoder}/>
           <LinkContainer id = "book__design" text="Design Books" href="https://books.zuri.team/design-rules" title={designBooks}/>
+
+          <NavLink to={"/linktree-react/contact"} style={styles}>
           
-          <NavLink to={"/linktree-react/contact"} style={{textDecoration:"none"} }>
-          
-          <LinkContainer id = "contact" text={"Contact Me"} title ={contact} />
+          <LinkContainer id = "contact" text="Contact Me" title ={contact} />
 
           </NavLink>
 

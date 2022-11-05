@@ -94,8 +94,9 @@ font-style: normal;
 font-weight: 600;
 font-size: 36px;
 line-height: 44px;
-
 color: #101828;
+letter-spacing: -0.02em;
+
 @media screen  and (max-width: 768px){
     width: auto;
     
@@ -112,8 +113,8 @@ font-size: 20px;
 line-height: 30px;
 color: #475467;
 @media screen  and (max-width: 768px){
-    width: auto;
-    font-size: 17.5px;
+   
+    font-size: 18px;
 }
 
 }
@@ -285,6 +286,11 @@ align-items: flex-start;
 padding: 1px;
 gap: 2px;
 height: 24px;
+color: #475467;
+font-size: 16px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
 
 @media screen  and (max-width: 768px){
     font-size: 12px;
@@ -302,7 +308,7 @@ height: 48px;
 background: #1570EF;
 width: 100%;
 margin: 2px;
-
+color: #ffffff;
 border: 1px solid #1570EF;
 /* Shadow/xs */
 

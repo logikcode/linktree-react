@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-// export const LinkWrapper = styled.div`
-
-// /* width: 100%;
-// margin: 25px 0px;
-// position: relative; */
-
-// /* &:hover{
-//     .tooltip{
-//         visibility: visible;
-        
-//     }
-// } */
-
-// `
 export const LinkWrapper = styled.div`
 
 width: 100%;
@@ -49,6 +35,7 @@ text-decoration: none;
 justify-content: center;
 font-weight: 600;
 cursor: pointer;
+color: #101828;
 
 &:active{
     color: #101828;
