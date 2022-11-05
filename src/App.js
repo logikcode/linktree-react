@@ -1,5 +1,5 @@
 import LinkTree from "./components/LinkTree";
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {Routes, Route} from "react-router-dom"
 import ContactUs from "./ContactUs";
 function App() {
   return (

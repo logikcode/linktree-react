@@ -21,11 +21,11 @@ function ContactUs() {
                     <div className="form-name-container">
                         <div className="form-input-box">
                             <label htmlFor="fname" className='form-label'>First name</label>
-                            <input type="text" className='fname' placeholder='Enter your first name' />
+                            <input id = "first_name" type="text" className='fname' placeholder='Enter your first name' />
                         </div>
                         <div className="form-input-box">
                             <label htmlFor="fname" className='form-label'>Last name</label>
-                            <input type="text" className='fname' placeholder='Enter your last name' />
+                            <input id=' last_name' type="text" className='fname' placeholder='Enter your last name' />
                         </div>
                         
 
